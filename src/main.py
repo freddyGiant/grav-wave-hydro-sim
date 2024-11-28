@@ -1,7 +1,7 @@
 import numpy as np
 
 class Simulation:
-    def __init__(self, n_r, n_theta, r_max, density, dt):
+    def __init__(self, n_r: int, n_theta: int, r_max: float, density: float, dt: float):
         '''
         Args:
             n_r (int): \# rectangles radial
@@ -24,6 +24,9 @@ class Simulation:
         self._v_theta = np.zeros((n_r, n_theta))
         
         self._density = density
+        
+    def solve():
+        pass
 
 def main():
     sim = Simulation(5, 8, 10e9, 1)
